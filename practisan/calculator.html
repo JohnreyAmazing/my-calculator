@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="flex h-screen bg-black justify-center items-center">
+        <div class="flex justify-center items-center bg-emerald-800 h-160 w-110 rounded-2xl" id="container">
+            <form action="" method="" class="flex justify-center my-10 mx-5 flex-col">
+                <input type="text" class="bg-amber-600 w-full h-20 my-6 text-3xl" id="inputbox" disabled>
+            
+                <div class="grid grid-cols-4 gap-4">
+                    <button type="button" id="btn" class="text-5xl bg-amber-50 h-20 w-20 border-1 rounded-2xl" onclick="appendkeys('7')">7</button>
+                    <button type="button" id="btn" class="text-5xl bg-amber-50 h-20 w-20 border-1 rounded-2xl" onclick="appendkeys('8')">8</button>
+                    <button type="button" id="btn" class="text-5xl bg-amber-50 h-20 w-20 border-1 rounded-2xl" onclick="appendkeys('9')">9</button>
+                    <button type="button" id="btn" class="text-5xl bg-amber-200 h-20 w-20 border-1 rounded-2xl" onclick="appendkeys('*')">x</button>
+                    <button type="button" id="btn" class="text-5xl bg-amber-50 h-20 w-20 border-1 rounded-2xl" onclick="appendkeys('4')">4</button>
+                    <button type="button" id="btn" class="text-5xl bg-amber-50 h-20 w-20 border-1 rounded-2xl" onclick="appendkeys('5')">5</button>
+                    <button type="button" id="btn" class="text-5xl bg-amber-50 h-20 w-20 border-1 rounded-2xl" onclick="appendkeys('6')">6</button>
+                    <button type="button" id="btn" class="text-5xl bg-amber-200 h-20 w-20 border-1 rounded-2xl" onclick="appendkeys('/')">/</button>
+                    <button type="button" id="btn" class="text-5xl bg-amber-50 h-20 w-20 border-1 rounded-2xl" onclick="appendkeys('3')">3</button>
+                    <button type="button" id="btn" class="text-5xl bg-amber-50 h-20 w-20 border-1 rounded-2xl" onclick="appendkeys('2')">2</button>
+                    <button type="button" id="btn" class="text-5xl bg-amber-50 h-20 w-20 border-1 rounded-2xl" onclick="appendkeys('1')">1</button>
+                    <button type="button" id="btn" class="text-5xl bg-amber-200 h-20 w-20 border-1 rounded-2xl" onclick="appendkeys('-')">-</button>
+                    <button type="button" id="btn" class="text-5xl bg-amber-200 h-20 w-20 border-1 rounded-2xl" onclick="appendkeys('.')">.</button>
+                    <button type="button" id="btn" class="text-5xl bg-amber-200 h-20 w-20 border-1 rounded-2xl" onclick="appendkeys('0')">0</button>
+                    <button type="button" id="btn" class="text-5xl bg-amber-200 h-20 w-20 border-1 rounded-2xl" onclick="calculate()">=</button>
+                    <button type="button" id="btn" class="text-5xl bg-amber-200 h-20 w-20 border-1 rounded-2xl" onclick="appendkeys('+')">+</button>
+                    <button type="button" id="btn" class="text-5xl bg-amber-200 h-20 w-20 border-1 rounded-2xl" onclick="clears()">C</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../index.js"></script>
+</body>
+</html>
